@@ -31,7 +31,7 @@ Rounding is per request, so use the mean of the billed durations, not the rounde
 
 ## What we measured
 
-`npm run measure` ran the bundled handler on an Apple M4 laptop with Node.js 24.22.0 against DynamoDB Local, 1,000 rounds of create, get, list, update and delete. The laptop was busy with other work, and four runs gave a mean billed duration between 1.9 ms and 4.5 ms. Peak resident memory was 128 MB to 164 MB, and Node.js didn't need to collect garbage early, so treat that as an upper bound for this machine. A successful request logged 0 bytes.
+`npm run measure` ran the bundled handler on an Apple M4 laptop with Node.js 24.22.0 against DynamoDB Local, 1,000 rounds of create, get, list, update and delete. The laptop was busy with other work, and four runs gave a mean billed duration between 1.3 ms and 4.5 ms. Peak resident memory was 128 MB to 164 MB, and Node.js didn't need to collect garbage early, so treat that as an upper bound for this machine. A successful request logged 0 bytes.
 
 Real Lambda adds a network round trip to DynamoDB and runs on a share of a Graviton CPU, so expect higher durations. Pass the real mean billed duration to the model after you deploy.
 

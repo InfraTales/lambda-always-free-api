@@ -61,7 +61,7 @@ To let another IAM role call the API, deploy with `-c invokerArn=arn:aws:iam::<a
 | `monthlyGbSecondBudget` | 400000 | This API's share of the free GB-seconds |
 | `reportLines` | false | `true` logs Lambda's START and REPORT lines, for measuring |
 
-New AWS accounts start with a lower Lambda concurrency quota, and Lambda always keeps 100 units unreserved. If the deploy fails on reserved concurrency, the steps to check and raise your quota are in [docs/runbook.md](docs/runbook.md), under the deploy section.
+New AWS accounts start with a lower Lambda concurrency quota, and Lambda keeps 100 units unreserved. If the deploy fails on reserved concurrency, the steps to check and raise your quota are in [docs/runbook.md](docs/runbook.md), under the deploy section.
 
 ## Measure, then model
 
