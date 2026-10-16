@@ -4,6 +4,10 @@ This repo is a small bookmarks API on an AWS Lambda function URL, with Amazon Dy
 
 It's written in AWS CDK (TypeScript). The tests run the real bundle against DynamoDB Local, and `npm run free-tier-model` works out how many requests a month stay free from measured duration and memory.
 
+## Architecture
+
+![Signed client calls a Lambda function URL, capped by reserved concurrency, which writes to DynamoDB](docs/architecture.png)
+
 ## What it does
 
 Callers sign every request with AWS Signature Version 4 (SigV4). Lambda checks the signature before the function runs, then passes the caller's IAM identity to the handler. Each caller sees only their own bookmarks.
