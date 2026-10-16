@@ -45,7 +45,7 @@ npm run check                                     # type check, lint, tests, syn
 npm run deploy -- -c alertEmail=you@example.com
 ```
 
-The stack prints `Url`. Confirm the email subscription so the alarms reach you. Then run the smoke test with the same credentials:
+The stack prints `Url`. Confirm the email subscription so the alarms reach you. Then run the smoke test with the same credentials. It finds the stack the way `cdk deploy` picks a Region: `AWS_REGION` first, then your profile's region, then us-east-1.
 
 ```bash
 npm run smoke
