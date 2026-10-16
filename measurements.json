@@ -1,0 +1,68 @@
+{
+  "measuredAt": "2026-10-16",
+  "machine": "Apple M4, darwin arm64, Node.js v24.22.0",
+  "note": "Laptop against DynamoDB Local. Real Lambda adds network time to DynamoDB and runs on a smaller CPU share. Treat these as a floor.",
+  "rounds": 1000,
+  "bundleLoadMs": 54.77,
+  "firstInvokeMs": 40.76,
+  "warm": {
+    "count": 4499,
+    "mean": 4.03,
+    "meanBilled": 4.54,
+    "p50": 3.35,
+    "p95": 7.63,
+    "p99": 13.13
+  },
+  "routes": {
+    "create": {
+      "count": 999,
+      "mean": 3.94,
+      "meanBilled": 4.45,
+      "p50": 3.26,
+      "p95": 7.29,
+      "p99": 13.83
+    },
+    "get": {
+      "count": 1000,
+      "mean": 3.42,
+      "meanBilled": 3.89,
+      "p50": 2.76,
+      "p95": 6.78,
+      "p99": 11.63
+    },
+    "list": {
+      "count": 1000,
+      "mean": 4.52,
+      "meanBilled": 5.05,
+      "p50": 3.62,
+      "p95": 8.35,
+      "p99": 14.74
+    },
+    "update": {
+      "count": 1000,
+      "mean": 4.32,
+      "meanBilled": 4.85,
+      "p50": 3.58,
+      "p95": 7.87,
+      "p99": 13.13
+    },
+    "delete": {
+      "count": 500,
+      "mean": 3.9,
+      "meanBilled": 4.42,
+      "p50": 3.27,
+      "p95": 7.15,
+      "p99": 12.4
+    }
+  },
+  "peakRssMb": 128.41,
+  "logBytesPerRequest": 0,
+  "responseBytes": {
+    "create": 300,
+    "get": 300,
+    "list": 5446,
+    "update": 273,
+    "delete": 0
+  },
+  "writeUnitsPerWrite": 1
+}
