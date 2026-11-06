@@ -22,18 +22,18 @@
     "smoke": "ts-node scripts/smoke-test.ts"
   },
   "dependencies": {
-    "@aws-sdk/client-dynamodb": "^3.1152.0",
-    "@aws-sdk/lib-dynamodb": "^3.1152.0",
+    "@aws-sdk/client-dynamodb": "^3.1160.0",
+    "@aws-sdk/lib-dynamodb": "^3.1160.0",
     "aws-cdk-lib": "^2.273.0",
     "cdk-nag": "^3.0.2",
     "constructs": "^10.8.1"
   },
   "devDependencies": {
     "@aws-crypto/sha256-js": "^5.2.0",
-    "@aws-sdk/client-cloudformation": "^3.1152.0",
+    "@aws-sdk/client-cloudformation": "^3.1160.0",
     "@aws-sdk/credential-provider-node": "^3.972.86",
     "@eslint/js": "^10.0.1",
-    "@smithy/signature-v4": "^5.7.4",
+    "@smithy/signature-v4": "^5.7.5",
     "@types/aws-lambda": "^8.10.164",
     "@types/jest": "^30.0.0",
     "@types/node": "^24.19.2",
